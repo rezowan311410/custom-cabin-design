@@ -1,0 +1,700 @@
+/* ===============================
+        Common Css Part Start 
+================================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,li{
+    list-style: none;
+}
+
+.extra__container{
+    padding: 0 40px !important;
+}
+
+.extra__container2{
+    padding: 0 15px !important;
+}
+
+:root{
+    --header__font: "Jost", sans-serif;
+    --primary__color: #1f1e1e;
+    --paragraph__font: "Poppins", sans-serif;
+    --text__color: #54525c;
+    --button__border__color: #ff7e31;
+    --button__text__color: #8c0000;
+    --bg__color: #ff1e1e;
+}
+
+.canvas__container{
+    position: relative;
+}
+
+canvas { 
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 100% !important;
+    height: 100vh !important;
+    border: 1px solid var(--button__border__color);
+    overflow: hidden;
+}
+
+
+
+/* ===============================
+        Common Css Part End
+================================== */
+/* ===============================
+        Header Part Start 
+================================== */
+.left__side {
+    display: flex;
+}
+
+.main__header {
+    margin-top: 35px;
+}
+
+.left__side .kleemann__logo{
+    margin-top: 5px;
+}
+
+.main__header .header__text h2{
+    color: var(--primary__color);
+    font-size: 36px;
+    font-weight: 300;
+    font-family: var(--header__font);
+    text-transform: uppercase;
+    white-space: none;
+}
+
+
+.main__header .button__one button{
+    border: 1px solid var(--button__border__color);
+    background: #fff;
+    padding: 08px 20px;
+    color: var(--button__text__color);
+    transition: .4s;
+    text-transform: capitalize;
+}
+
+.main__header .button__one button:hover{
+    background: rgba(0, 97, 160,0.1);
+}
+
+.main__header .right__side{
+    display: flex;
+}
+
+.main__header .right__side .button__two button{
+    border: 1px solid var(--button__border__color);
+    background: #fff;
+    padding: 08px 20px;
+    color: var(--button__text__color);
+    margin-left: 10px;
+    transition: .4s;
+    text-transform: capitalize;
+}
+
+.main__header .button__two button:hover{
+    background: rgba(0, 97, 160,0.1);
+}
+
+.main__header .right__side .button__three button{
+    border: 1px solid var(--bg__color);
+    background: #fff;
+    padding: 08px 20px;
+    color: #fff;
+    margin-left: 10px;
+    transition: .4s;
+    background: var(--bg__color);
+    text-transform: capitalize;
+}
+
+.main__header .right__side .button__three button:hover{
+    background: var(--button__text__color);
+    border: 1px solid var(--button__border__color);
+}
+
+.main__header {
+    position: relative;
+}
+
+ .kleemann__logo img{
+    width: 16%;
+    left: 25px; 
+    top: -35px;
+    position: absolute;
+    
+}
+
+/* ===============================
+        Header Part End
+================================== */
+/* ===============================
+        Navbar Part Start
+================================== */
+.main__nav .left__image{
+    margin-top: 80px;
+}
+
+
+
+.main__nav .left__image .img{
+    display: none;
+}
+
+.main__item ul{
+    margin-top: 35px;
+}
+
+.main__item ul li{
+    margin-top: 12px;
+    cursor: pointer;
+    font-family: var(--header__font);
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: var(--bg__color);
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main__nav .left__side-border {
+    border-right:  1px solid rgba(0, 0, 0,0.1);
+    /* border-bottom:  1px solid rgba(0, 0, 0,0.1); */
+}
+
+.modal-body h2{
+    font-family: var(--header__font);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--primary__color);
+}
+
+.modal-header h1{
+    color: var(--button__text__color);
+    font-family: var(--header__font);
+    font-size: 36px !important;
+    
+}
+
+.modal-footer button{
+    background-color: var(--button__text__color);
+    color: #ffffff;
+    transition: .4s;
+    
+}
+
+.modal-footer button:hover{
+    background: var(--primary__color);
+    color: var(--bg__color);
+    
+}
+
+.modal-footer .icon i{
+    height: 50px;
+    width: 50px;
+    background: var(--button__text__color);
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 15px;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.modal-footer .icon i:hover{
+    background: var(--primary__color);
+}
+
+.modal-footer .copy_btn{
+    background-color: var(--bg__color) !important;
+    transition: .4s;
+}
+
+.modal-footer .copy_btn:hover{
+    background: var(--bg__color) !important;
+    color: #ffffff !important;
+}
+
+/* ===============================
+        Navbar Part End
+================================== */
+/* ===============================================
+           Navbar lift__elements Part start
+================================================== */
+.lift__elements {
+    margin-left: 15px;
+    margin-top: 50px;
+    position: relative;
+    display: none;
+}
+.lift__elements .text h4{
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: var(--header__font);
+    color: #888888;
+}
+
+.lift__elements .img{
+    margin-top: 25px;
+    
+}
+
+.lift__elements .img svg{
+    display: block;
+}
+
+.lift__elements .button span{
+    padding: 10px 30px;
+    /* background: #2694F4; */
+    background: #DBDBDB;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--button__text__color);
+    margin-left: -20px !important;
+    margin-top: 5px;
+    display: inline-block;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.lift__elements .button .second__button{
+    margin-left: 10px !important;
+}
+
+
+.cabin__door_elements__js__work{
+    display: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.cabin__door_elements .main h4{
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: var(--header__font);
+    color: #888888;
+}
+
+.custom-select {
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.selected-option {
+    padding: 10px;
+    border: 1px solid var(--primary__color); /* Red border around the selected option */
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* Styling for options container */
+.cabin__door_elements .options {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    border: 1px solid var(--primary__color); /* Red border around options container */
+    border-top: none;
+    height: 90px;
+    scroll-behavior: inherit;
+    overflow-y: scroll;
+     /* Seamless connection with selected option */
+}
+
+.cabin__door_elements .option {
+    padding: 10px;
+    border-bottom: 1px solid var(--primary__color); /* Bottom border for each option */
+    background-color: #fff;
+}
+
+.cabin__door_elements .option:last-child {
+    border-bottom: none; /* Remove border from last option */
+}
+
+.cabin__door_elements .option:hover {
+    background-color: #e6e6e6; /* Hover effect */
+}
+
+
+.cabin__door_elements .main__item {
+    display: flex;
+    /* gap: 10px; */
+    flex-direction: column;
+    margin-top: 80px;
+    /* display: none; */
+}
+
+.cabin__door_elements .item {
+    padding: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.cabin__door_elements .item h2{
+    font-size: 16px;
+    font-family: var(--header__font);
+    font-weight: 400;
+}
+
+.cabin__door_elements .item img {
+    width: 100%;
+    height: 68%;
+    object-fit: cover;
+}
+
+.cabin__door_elements .active {
+    background-color: red;
+    color: #fff;
+}
+
+.cabin__door_elements .active h2 {
+    color: #fff;
+}
+
+/* Apply hover effect only to non-active items */
+.cabin__door_elements .main__item .item:not(.active):hover {
+    background: rgba(3, 59, 97, 0.5);
+}
+
+.cabin__door_elements .main__paint__part{
+    display: none;
+}
+
+.door_entrance .common__wall__main__css{
+    position: absolute;
+    right: -15%;
+    top: 10%;
+}
+
+.door_entrance2 .common__wall__main__css{
+    position: absolute;
+    right: -15%;
+    top: 39%;
+}
+
+
+
+/* ===============================================
+           Navbar lift__elements Part End
+================================================== */
+
+/* ===============================================
+           cabin__walls_elements Part start
+================================================== */
+.cabin__walls_elements{
+    
+    margin-left: 15px;
+    margin-top: 20px;
+    /* position: relative; */
+}
+
+.cabin_walls_dropdown{
+    position: relative;
+}
+
+.cabin__walls_elements .cabin__walls__main__item .item:not(.active):hover {
+    background: rgba(3, 59, 97, 0.5);
+}
+
+.cabin__walls_elements .cabin__walls__main__item {
+    scroll-behavior: inherit;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+ .common__wall__main__css{
+    z-index: 5;
+    background: var(--bg__color);
+    padding: 10px 10px;
+    color: #ffffff;
+    border-radius: 10px;
+    /* display: none; */
+}
+
+ .common__wall__main__css li{
+    margin-top: 10px;
+    font-family: var(--header__font);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    border:  1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+ .common__wall__main__css li:hover{
+    background: var(--button__text__color);
+}
+
+ .common__wall__main__css li:nth-child(3){
+    /* background: var(--button__text__color); */
+    transition: .8s !important;
+}
+
+.cabin__walls_elements .rightwall__menu {
+    margin-top: 20px;
+}
+
+.cabin__walls_elements .frontwall__menu {
+    margin-top: 20px;
+}
+
+.main_menu_wall_part{
+    overflow-y: auto;
+    height: 350px;
+    background: var(--primary__color);
+    position: absolute;
+    top: 10%;
+    right: -35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9;
+    padding: 20px;
+    display: none;
+    border-radius: 25px;
+}
+
+
+
+
+/* ===============================================
+           cabin__walls_elements Part End
+================================================== */
+/* ===============================================
+           cabin__floor_elements Part start
+================================================== */
+.cabin__floor_elements__js__work{
+    display: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+/* ===============================================
+           cabin__floor_elements Part End
+================================================== */
+/* ===============================================
+           cabin__celling_elements Part start
+================================================== */
+.cabin__celling_elements__js__work{
+    display: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+/* ===============================================
+           cabin__celling_elements Part End
+================================================== */
+/* ===============================================
+          cabin__Handrail_elements Part start
+================================================== */
+.cabin__Handrail_elements__js__work{
+    display: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.cabin__Handrail_elements__js__work .handrail_item{
+    margin-left: 25px;
+}
+
+.cabin__Handrail_elements__js__work h2{
+    font-family: var(--header__font);
+    color: var(--button__text__color);
+    font-size: 32px;
+}
+
+.cabin__Handrail_elements__js__work .side_part .right__side{
+    margin-left: 24%;
+    /* display: none; */
+}
+
+.cabin__Handrail_elements__js__work .side_part span{
+    padding: 10px 22px;
+    cursor: pointer;
+    margin-right: 10px;
+    background: var(--bg__color);
+    color: #ffffff;
+    margin-top: 15px;
+    display: inline-block;
+    font-family: var(--paragraph__font);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.cabin__Handrail_elements__js__work .cabin__Handril_elements{
+    margin-top: -40px !important;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ===============================================
+           cabin__Handrail_elements Part end
+================================================== */
+
+/* ===============================================
+           cabin__COP_elements Part start
+================================================== */
+.cabin__COP_elements__js__work{
+    display: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.cabin__COP_elements__js__work .item img{
+    width: 100% !important;
+    height: 85% !important;
+}
+
+.cabin__door_elements .item2 {
+    margin-top: -40px;
+    width: 100%;
+    height: 50vh;
+}
+
+.cabin__door_elements .item2 h2 {
+    font-family: var(--header__font);
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+/* ===============================================
+           cabin__COP_elements Part end
+================================================== */
+/* ===============================================
+           cabin__Mirror_elements Part start
+================================================== */
+.cabin__Mirror_elements__js__work{
+    display: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.cabin__Mirror_elements__js__work .mirror_button span{
+    padding: 10px 22px;
+    cursor: pointer;
+    margin-right: 10px;
+    background: var(--bg__color);
+    color: #ffffff;
+    margin-top: 30px;
+    display: inline-block;
+    font-family: var(--paragraph__font);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+/* ===============================================
+           cabin__Mirror_elements Part end
+================================================== */
+
+
+
+
+
+/*  media query start */
+
+/*minWidth 991px to  MaxWidth 1229px start*/
+@media (min-width: 991px) and (max-width: 1061px) {
+    .header__text h2{
+     display: none;
+    }
+    .main__header .button__one button {
+        padding: 08px 12px;
+    }
+    .main__header .right__side .button__two button {
+        padding: 08px 12px;
+    }
+    .main__header .right__side .button__three button {
+        padding: 08px 12px;
+    }
+   }
+@media (min-width: 991px) and (max-width: 1229px) {
+   .header__text h2{
+    display: none;
+   }
+   .main_menu_wall_part {
+    overflow-y: auto;
+    height: 350px;
+    background: var(--primary__color);
+    position: absolute;
+    top: 10%;
+    right: -40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9;
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    margin-top: 45px;
+  
+}
+  }
+
+  @media (min-width: 991px) and (max-width: 1275px) {
+    .cabin__Handrail_elements__js__work .side_part .right__side {
+        margin-left: 0;
+    }
+}
+
+  @media (min-width: 991px) and (max-width: 1150px) {
+    .main__nav .left__image .img svg{
+        width: 100px;
+        height: 220px;
+    }
+   }
+
+   .main__nav .main__item .main__item__menubar{
+    margin-left: -25px;
+   }
+
+  /*minWidth 991px to  MaxWidth 1229px start*/
+
+  /*minWidth px to  MaxWidth 1229px start*/
+
+ @media (min-width: 1229px) and (max-width: 1306px) {
+ 
+    .main__header .header__text h2 {
+     font-size: 30px !important;
+ }
+   }
+  
+   /*minWidth 991px to  MaxWidth 1229px start*/
+
+/* media query end */
